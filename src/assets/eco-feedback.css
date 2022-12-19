@@ -1,0 +1,2758 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url(https://ecolib.appliediphub.com/fonts/helvetica-neue-family/helvetica-neue.css);
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding-top: 0px;
+  /* display: table; */
+  width: inherit;
+  height: inherit;
+}
+
+/*ECO NPS CSAT Popup Overwrite - Start*/
+.ecoSurvey-nps-modal .survey-details .ecoSurvey-send-nps {
+  border: none;
+}
+
+.ecoSurvey-nps-modal .survey-details #ecoSurveySend:hover {
+  box-shadow: none;
+}
+
+.ecoSurvey-nps-modal .take-survey-page h4.survey-brand + img {
+  display: none;
+}
+
+.ecoSurvey-nps-modal .take-survey-page .survey-brand {
+  max-width: 450px;
+}
+
+.ecoSurvey-nps-modal .survey-details > .form-group-heading:first-child {
+  padding-bottom: 15px;
+}
+/*ECO NPS CSAT Popup Overwrite - End*/
+
+#ecoHelpWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  /* left: 10%; */
+  width: 100%;
+  z-index: 1201;
+}
+
+.eco-container {
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+.eco-help-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  z-index: 1200;
+}
+
+.eco-feedback-functionality {
+  position: relative;
+  display: none;
+  right: 120px;
+}
+
+.feedback-app {
+  display: none;
+  width: 48%;
+  position: absolute;
+  top: 152px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.eco-intro-functionality {
+  position: relative;
+  z-index: 999;
+}
+
+.left-intro {
+  min-height: 500px;
+  display: none;
+}
+
+.intro-logo {
+  margin-top: 20%;
+}
+
+.emo-logo {
+  margin-top: 80%;
+  padding: 10%;
+}
+
+.center-content {
+  position: static;
+  display: none;
+}
+
+.center-content > .line {
+  height: 500px;
+  margin: auto;
+  border-left: 1px dashed #ffffff;
+}
+
+.content-wrapper-1,
+.content-wrapper-2 {
+  color: #fff;
+  display: none;
+}
+
+.content-wrapper-1 {
+  position: absolute;
+}
+
+.content-wrapper-2 {
+  position: absolute;
+  top: 160px;
+}
+
+#next-slide {
+  display: none;
+  position: absolute;
+  top: 450px;
+}
+
+.content-wrapper-1 h2 {
+  color: #00c3fa;
+}
+
+.content-wrapper-2 h2 {
+  color: #b1d442;
+}
+
+.eco-abbr > span:first-child {
+  color: #fff;
+  font-family: "HelveticaNeue-Thin";
+  font-size: 25px;
+}
+
+.content-wrapper-2 ul {
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.step-content .more-info {
+  background: url("https://ecolib.appliediphub.com/img/help/info.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-indent: -99999px;
+  outline: none;
+}
+
+.step-content-defect .more-info {
+  background: url("https://ecolib.appliediphub.com/img/help/info.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-indent: -99999px;
+  outline: none;
+}
+
+.step .step-image {
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.step .step-image-nograb {
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.step-1 .step-image {
+  position: absolute;
+  width: 4%;
+  bottom: -350px;
+  right: -64px;
+  margin: auto;
+}
+
+.step-2 .step-image {
+  width: 3.5%;
+  top: 334px;
+  left: 34.5%;
+}
+
+/* .step-2 .step-image img {
+    width: 40px;
+} */
+
+.step-3 .step-image {
+  width: 13.5%;
+  top: 310px;
+  left: 48%;
+}
+
+.defect .step-image {
+  width: 9.5%;
+  top: 330px;
+  left: 48%;
+}
+
+.step-3-4 .step-image {
+  top: 180px;
+  left: 47%;
+  width: 6%;
+}
+
+.step-4 .step-image {
+  width: 21%;
+  top: 249px;
+  left: 48.5%;
+}
+
+.attach_info .step-image {
+  width: 21%;
+  top: 225px;
+  left: 48.5%;
+}
+
+.attach .step-image {
+  /* display: block; */
+  width: 5.8%;
+  top: 178px;
+  left: 58.8%;
+}
+
+.attach-nograb .step-image {
+  width: 5.8%;
+  top: 178px;
+  left: 64%;
+}
+
+.attach .step-image img {
+  width: 42%;
+}
+
+.attach-nograb .step-image img {
+  width: 42%;
+}
+
+.step-5 .step-image {
+  width: 5.2%;
+  top: 180px;
+  left: 62%;
+}
+
+.step-5 .step-image img {
+  width: 35%;
+}
+
+.step-6 .step-image {
+  width: 5%;
+  top: 180px;
+  left: 64.8%;
+}
+
+.step-6 .step-image img {
+  width: 40%;
+}
+
+.step-7 .step-image {
+  padding-left: 9px;
+  border-left: 1px dotted #cccccc;
+  width: 6%;
+  top: 180px;
+  left: 67.5%;
+}
+
+.step-7 .step-image img {
+  width: 34%;
+}
+
+.step-8 .step-image {
+  width: 2.5%;
+  top: 261px;
+  left: 70%;
+}
+
+.step-9 .step-image {
+  width: 2.5%;
+  top: 414px;
+  left: 782px;
+}
+
+.step .step-content {
+  position: absolute;
+  font-family: "Indie Flower", cursive;
+  z-index: 11;
+  display: none;
+}
+
+.step .step-content h2 {
+  color: #cacad8;
+  font-size: 22px;
+  font-family: "Indie Flower", cursive;
+}
+
+.step .step-content p {
+  color: #a7a7b7;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Indie Flower", cursive;
+}
+
+.step .step-content-defect {
+  position: absolute;
+  font-family: "Indie Flower", cursive;
+  z-index: 11;
+  display: none;
+}
+
+.step .step-content-defect h2 {
+  color: #cacad8;
+  font-size: 22px;
+  font-family: "Indie Flower", cursive;
+}
+
+.step .step-content-defect p {
+  color: #a7a7b7;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Indie Flower", cursive;
+}
+
+.step-1 .step-content {
+  width: 21%;
+  top: 423px;
+  left: 79%;
+}
+
+.step-2 .step-content {
+  width: 18%;
+  top: 415px;
+  left: 38%;
+}
+
+.step-2 .step-content-defect {
+  width: 18%;
+  top: 435px;
+  left: 43%;
+}
+
+.defect .step-content {
+  width: 17%;
+  top: 405px;
+  left: 62%;
+}
+
+.step-3 .step-content {
+  width: 18%;
+  top: 410px;
+  left: 13%;
+}
+
+.step-3 .step-content h2 > img {
+  width: 60%;
+}
+
+.step-4 .step-content {
+  width: 16%;
+  top: 35px;
+  left: 11%;
+}
+
+.attach_info .step-content {
+  width: 20%;
+  top: -35px;
+  left: 28%;
+}
+
+.attach .step-content {
+  width: 25%;
+  top: -55px;
+  left: 28%;
+}
+
+.attach-nograb .step-content {
+  width: 28%;
+  top: -45px;
+  left: 34%;
+}
+
+.step-5 .step-content {
+  width: 18%;
+  top: -45px;
+  left: 53%;
+}
+
+.step-6 .step-content {
+  width: 25%;
+  top: -7px;
+  left: 73%;
+}
+
+.step-7 .step-content {
+  width: 22%;
+  top: 140px;
+  left: 79%;
+}
+
+.step-8 .step-content {
+  width: 21%;
+  top: 300px;
+  left: 79%;
+}
+
+/* .step-9 .step-content {
+width: 19%;
+top: 390px;
+left: 900px;
+} */
+
+.step .step-arrow {
+  opacity: 0.8;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.step .step-arrow-defect {
+  opacity: 0.8;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
+.step-1 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_1.png)
+    no-repeat;
+  width: 17%;
+  height: 300px;
+  top: 350px;
+  left: 90%;
+  background-size: 84%;
+}
+
+.step-2 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_2.png)
+    no-repeat;
+  width: 40%;
+  height: 300px;
+  top: 365px;
+  left: 31%;
+}
+
+.step-2 .step-arrow-defect {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_2.png)
+    no-repeat;
+  top: 329px;
+  height: 300px;
+  left: 36%;
+  width: 28%;
+}
+
+.defect .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow5.png) no-repeat;
+  width: 18%;
+  height: 300px;
+  top: 348px;
+  left: 49%;
+  background-size: 67% auto;
+}
+
+.step-3 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_3.png)
+    no-repeat;
+  width: 41%;
+  height: 300px;
+  top: 300px;
+  left: 20%;
+  background-size: 67% auto;
+}
+
+.step-4 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_4.png)
+    no-repeat;
+  width: 32%;
+  height: 300px;
+  top: 137px;
+  left: 19%;
+  background-size: 90% auto;
+}
+
+.attach_info .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow1.png) no-repeat;
+  width: 13%;
+  height: 300px;
+  top: 92px;
+  left: 37%;
+  background-size: 82% auto;
+}
+
+.attach .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow1a.png)
+    no-repeat;
+  width: 18%;
+  height: 300px;
+  top: 99px;
+  left: 44%;
+  background-size: 82% auto;
+}
+
+.attach-nograb .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow1a.png)
+    no-repeat;
+  width: 20%;
+  height: 300px;
+  top: 82px;
+  left: 47.5%;
+  background-size: 82% auto;
+}
+
+.step-5 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow2.png) no-repeat;
+  width: 6%;
+  height: 300px;
+  top: 75px;
+  left: 58%;
+  background-size: 82% auto;
+}
+
+.step-6 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow3.png) no-repeat;
+  width: 10%;
+  height: 400px;
+  background-size: 60% auto;
+  top: 42px;
+  left: 65.5%;
+}
+
+.step-7 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow4.png) no-repeat;
+  height: 300px;
+  top: 115px;
+  left: 69.5%;
+  background-size: 60% auto;
+  width: 15%;
+}
+
+.step-8 .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_8.png)
+    no-repeat;
+  width: 17%;
+  height: 117px;
+  top: 226px;
+  background-size: 57% auto;
+  left: 71.5%;
+}
+
+/* incident step-image */
+
+.incident_bg {
+  margin-left: 164px;
+  width: 71%;
+  margin-top: 12px;
+}
+
+.attachment .step-image {
+  width: 5.8%;
+  top: 178px;
+  left: 58.8%;
+}
+
+.attachment-nograb .step-image {
+  width: 5.8%;
+  top: 178px;
+  left: 64%;
+}
+
+.attachment .step-image img {
+  width: 42%;
+}
+
+.attachment-nograb .step-image img {
+  width: 42%;
+}
+
+.help .step-image {
+  padding-left: 9px;
+  border-left: 1px dotted #cccccc;
+  width: 6%;
+  top: 180px;
+  left: 67.5%;
+}
+
+.help .step-image img {
+  width: 34%;
+}
+
+.attachment_info .step-image {
+  width: 24.5%;
+  top: 225px;
+  left: 45%;
+}
+
+.short_desc .step-image {
+  top: 255px;
+  left: 45%;
+}
+
+.short_desc .step-image img {
+  width: 96%;
+}
+
+/* .impact .step-image {
+    top: 325px;
+    left: 45%;
+}
+
+.impact .step-image img {
+    width: 67%;
+} */
+
+.long_desc .step-image {
+  top: 297px;
+  left: 45%;
+}
+
+.long_desc .step-image img {
+  width: 96%;
+}
+
+.urgency .step-image {
+  top: 365px;
+  left: 45%;
+}
+
+.urgency .step-image img {
+  width: 67%;
+}
+
+.arrow_left .step-image {
+  width: 1.3%;
+  top: 280px;
+  left: 42%;
+}
+
+.arrow_right .step-image {
+  width: 1.3%;
+  top: 280px;
+  left: 71%;
+}
+
+.send .step-image {
+  width: 2.5%;
+  top: 347px;
+  left: 71%;
+}
+
+.attachment .step-content {
+  width: 25%;
+  top: -55px;
+  left: 28%;
+}
+
+.attachment-nograb .step-content {
+  width: 28%;
+  top: -45px;
+  left: 34%;
+}
+
+.help .step-content {
+  width: 22%;
+  top: 95px;
+  left: 75%;
+}
+
+.short_desc .step-content {
+  width: 15%;
+  top: 35px;
+  left: 11%;
+}
+
+/* .impact .step-content {
+    width: 17%;
+    top: 453px;
+    left: 18%;
+} */
+
+.long_desc .step-content {
+  width: 17%;
+  top: 453px;
+  left: 18%;
+}
+
+.urgency .step-content {
+  width: 22%;
+  top: 471px;
+  left: 40%;
+}
+
+.arrow_right .step-content {
+  width: 21%;
+  top: 175px;
+  left: 81%;
+}
+
+.send .step-content {
+  width: 21%;
+  top: 315px;
+  left: 79%;
+}
+
+.attachment .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow1a.png)
+    no-repeat;
+  width: 18%;
+  height: 300px;
+  top: 99px;
+  left: 44%;
+  background-size: 82% auto;
+}
+
+.attachment-nograb .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow1a.png)
+    no-repeat;
+  width: 20%;
+  height: 300px;
+  top: 82px;
+  left: 47.5%;
+  background-size: 82% auto;
+}
+
+.help .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow9.png) no-repeat;
+  height: 300px;
+  top: 106px;
+  left: 68.5%;
+  background-size: 60% auto;
+  width: 8%;
+}
+
+.attachment_info .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow1.png) no-repeat;
+  width: 12%;
+  height: 300px;
+  top: 92px;
+  left: 36%;
+  background-size: 82% auto;
+}
+
+.short_desc .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow_4.png)
+    no-repeat;
+  width: 32%;
+  height: 300px;
+  top: 136px;
+  left: 18.5%;
+  background-size: 82% auto;
+}
+
+/* .impact .step-arrow {
+    background: url(https://ecolib.appliediphub.com/img/help/arrow10.png) no-repeat;
+    width: 37%;
+    height: 400px;
+    background-size: 60% auto;
+    top: 328px;
+    left: 22.5%;
+} */
+
+.long_desc .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow10.png)
+    no-repeat;
+  width: 37%;
+  height: 400px;
+  background-size: 60% auto;
+  top: 328px;
+  left: 22.5%;
+}
+
+.urgency .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow7.png) no-repeat;
+  width: 19%;
+  height: 400px;
+  background-size: 60% auto;
+  top: 370px;
+  left: 33.5%;
+}
+
+.arrow_right .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow8.png) no-repeat;
+  width: 12%;
+  height: 117px;
+  top: 185px;
+  background-size: 57% auto;
+  left: 72%;
+}
+
+.send .step-arrow {
+  background: url(https://ecolib.appliediphub.com/img/help/arrow4.png) no-repeat;
+  width: 15%;
+  height: 117px;
+  top: 281px;
+  background-size: 57% auto;
+  left: 72.5%;
+}
+
+.step .step-content .more-info {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.step .step-content-defect .more-info {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.popover {
+  color: black;
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  z-index: 1202;
+}
+
+.step .popover {
+  z-index: 12;
+}
+
+.step .popover-bs-title {
+  font-size: 16px;
+  color: black;
+}
+
+.popover-content {
+  font-weight: lighter;
+  color: #646472 !important;
+}
+
+#ecoHelpComplete {
+  /* display: none; */
+  position: absolute;
+  z-index: 999;
+  left: 99%;
+  top: -38px;
+  border: none !important;
+  border-radius: 5px 5px 0 0 !important;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1152px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .container {
+    max-width: 718px !important;
+  }
+}
+
+/*---- Responsive Styles | Start ----*/
+
+@media (-webkit-min-device-pixel-ratio: 1.25) {
+  .eco-feedback-functionality {
+    margin-top: -30px;
+  }
+  .step .step-content h2 {
+    font-size: 20px;
+  }
+  .step .step-content p {
+    font-size: 18px;
+  }
+  .step .step-content-defect h2 {
+    font-size: 20px;
+  }
+  .step .step-content-defect p {
+    font-size: 18px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+  .eco-feedback-functionality {
+    margin-top: -70px;
+  }
+  .step .step-content h2 {
+    font-size: 18px;
+  }
+  .step .step-content p {
+    font-size: 16px;
+  }
+  .step .step-content-defect h2 {
+    font-size: 18px;
+  }
+  .step .step-content-defect p {
+    font-size: 16px;
+  }
+  .attach .step-content {
+    width: 25%;
+    top: -15px;
+    left: 28%;
+  }
+  .attach-nograb .step-content {
+    width: 28%;
+    top: -20px;
+    left: 34%;
+  }
+  .step-5 .step-content {
+    width: 17%;
+    top: -30px;
+    left: 53%;
+  }
+  .step-6 .step-content {
+    width: 25%;
+    top: -5px;
+    left: 73%;
+  }
+  #ecoHelpComplete {
+    top: -25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #ecoHelpComplete {
+    width: 10%;
+    top: 102px;
+    left: 89%;
+  }
+  .eco-feedback-functionality {
+    margin-top: -155px;
+  }
+  .navbar-brand {
+    padding: 25px 0px;
+  }
+  .navbar-brand > span:first-child {
+    font-size: 40px;
+  }
+  .feedback-app {
+    top: 200px;
+  }
+  .step-1 .step-image {
+    width: 4%;
+    top: 245px;
+    right: 11px;
+  }
+  .step-2 .step-image {
+    width: 7%;
+    top: 351px;
+    left: 34%;
+  }
+  .step-2 .step-image img {
+    width: 30px;
+  }
+  .step-3 .step-image {
+    width: 14%;
+    top: 330px;
+    left: 48%;
+  }
+  .defect .step-image {
+    width: 11%;
+    top: 348px;
+    left: 48%;
+  }
+  .step-3-4 .step-image {
+    top: 225px;
+    left: 48%;
+    width: 9%;
+  }
+  .step-3-4 .step-image img {
+    width: 56px;
+  }
+  .step-4 .step-image {
+    width: 21.5%;
+    top: 278px;
+    left: 48%;
+  }
+  .step-5 .step-image {
+    width: 14%;
+    top: 226px;
+    left: 61.5%;
+  }
+  .step-5 .step-image img {
+    width: 12.5%;
+  }
+  .attach_info .step-image {
+    width: 21%;
+    top: 258px;
+    left: 48%;
+  }
+  .attach .step-image {
+    /* display: block; */
+    width: 16%;
+    top: 225px;
+    left: 58.5%;
+  }
+  .attach-nograb .step-image {
+    width: 16%;
+    top: 225px;
+    left: 64%;
+  }
+  .attach .step-image img {
+    width: 14%;
+  }
+  .attach-nograb .step-image img {
+    width: 14%;
+  }
+  .step-6 .step-image {
+    width: 14%;
+    top: 225px;
+    left: 64%;
+  }
+  .step-6 .step-image img {
+    width: 14%;
+  }
+  .step-7 .step-image {
+    width: 8.5%;
+    top: 225px;
+    left: 66.8%;
+  }
+  .step-7 .step-image img {
+    width: 20.5%;
+  }
+  .step-8 .step-image {
+    width: 2.5%;
+    top: 290px;
+    left: 70%;
+  }
+  .step .step-content h2 {
+    font-size: 24px;
+  }
+  .step .step-content-defect h2 {
+    font-size: 24px;
+  }
+  .step-1 .step-content {
+    top: 484px;
+    left: 63%;
+    width: 11%;
+  }
+  .step-2 .step-content {
+    top: 447px;
+    left: 38%;
+  }
+  .step-2 .step-content-defect {
+    top: 439px;
+    left: 44%;
+  }
+  .defect .step-content {
+    width: 18%;
+    top: 390px;
+    left: 60%;
+  }
+  .step-3 .step-content {
+    top: 420px;
+    left: 14%;
+    width: 18%;
+  }
+  .defect .step-content {
+    width: 18%;
+    top: 410px;
+    left: 60%;
+  }
+  .step-4 .step-content {
+    top: 136px;
+    left: 20%;
+    width: 16%;
+  }
+  .attach_info .step-content {
+    top: -35px;
+    left: 28%;
+  }
+  .attach .step-content {
+    top: 91px;
+    left: 35%;
+  }
+  .attach-nograb .step-content {
+    top: 105px;
+    left: 37%;
+  }
+  .step-5 .step-content {
+    top: 95px;
+    left: 54%;
+  }
+  .step-6 .step-content {
+    top: 112px;
+    left: 72%;
+  }
+  .step-7 .step-content {
+    top: 170px;
+    left: 79%;
+  }
+  .step-8 .step-content {
+    top: 330px;
+    left: 77%;
+  }
+  .step-1 .step-arrow {
+    top: 366px;
+    left: 69%;
+    width: 38%;
+    background-size: 74% auto;
+  }
+  .step-2 .step-arrow {
+    top: 369px;
+    left: 30%;
+    width: 24%;
+    background-size: 27% auto;
+  }
+  .step-2 .step-arrow-defect {
+    top: 351px;
+    left: 36.5%;
+    width: 22%;
+    background-size: 27% auto;
+  }
+  .defect .step-arrow {
+    width: 15%;
+    top: 366px;
+    left: 49%;
+    background-size: 67% auto;
+  }
+  .step-3 .step-arrow {
+    top: 321px;
+    left: 18%;
+    width: 54%;
+    background-size: 56% auto;
+  }
+  .step-4 .step-arrow {
+    width: 45%;
+    top: 204px;
+    left: 22%;
+    background-size: 55% auto;
+  }
+  .attach_info .step-arrow {
+    width: 13%;
+    top: 144px;
+    left: 37%;
+    background-size: 82% auto;
+  }
+  .attach .step-arrow {
+    width: 20%;
+    top: 139px;
+    left: 42%;
+    background-size: 82% auto;
+  }
+  .attach-nograb .step-arrow {
+    width: 20%;
+    top: 145px;
+    left: 47.5%;
+    background-size: 82% auto;
+  }
+  .step-5 .step-arrow {
+    width: 9%;
+    top: 127px;
+    left: 57%;
+    background-size: 65% auto;
+  }
+  .step-6 .step-arrow {
+    top: 123px;
+    left: 64.8%;
+    background-size: 40% auto;
+    width: 13%;
+  }
+  .step-7 .step-arrow {
+    top: 168px;
+    width: 17%;
+    left: 68.5%;
+    background-size: 55% auto;
+  }
+  .step-8 .step-arrow {
+    width: 26%;
+    top: 258px;
+    background-size: 35% auto;
+  }
+  /* incident step-image */
+  .incident_bg {
+    margin-left: 130px;
+    width: 71%;
+    margin-top: 12px;
+  }
+  .help .step-image {
+    padding-left: 9px;
+    border-left: 1px dotted #cccccc;
+    width: 6%;
+    top: 226px;
+    left: 67.5%;
+  }
+  .help .step-image img {
+    width: 34%;
+  }
+  .attachment_info .step-image {
+    width: 26%;
+    top: 265px;
+    left: 44%;
+  }
+  .short_desc .step-image {
+    top: 292px;
+    left: 44%;
+  }
+  .short_desc .step-image img {
+    width: 85%;
+  }
+  /* .impact .step-image {
+        top: 352px;
+        left: 44%;
+    }
+    .impact .step-image img {
+        width: 58%;
+    } */
+  .long_desc .step-image {
+    top: 330px;
+    left: 44%;
+  }
+  .long_desc .step-image img {
+    width: 85%;
+  }
+  .urgency .step-image {
+    top: 389px;
+    left: 44%;
+  }
+  .urgency .step-image img {
+    width: 58%;
+  }
+  .arrow_left .step-image {
+    width: 1.3%;
+    top: 313px;
+    left: 41.5%;
+  }
+  .arrow_right .step-image {
+    width: 1.3%;
+    top: 313px;
+    left: 71%;
+  }
+  .send .step-image {
+    width: 2.5%;
+    top: 376px;
+    left: 70%;
+  }
+  .help .step-content {
+    width: 22%;
+    top: 156px;
+    left: 76%;
+  }
+  .short_desc .step-content {
+    width: 16%;
+    top: 135px;
+    left: 16%;
+  }
+  /* .impact .step-content {
+        width: 17%;
+        top: 465px;
+        left: 18%;
+    } */
+  .long_desc .step-content {
+    width: 17%;
+    top: 465px;
+    left: 13%;
+  }
+  .urgency .step-content {
+    width: 22%;
+    top: 509px;
+    left: 39%;
+  }
+  .arrow_right .step-content {
+    width: 21%;
+    top: 225px;
+    left: 79%;
+  }
+  .send .step-content {
+    width: 21%;
+    top: 345px;
+    left: 79%;
+  }
+  .help .step-arrow {
+    top: 164px;
+    left: 69%;
+    background-size: 60% auto;
+    width: 8%;
+  }
+  .attachment_info .step-arrow {
+    width: 12%;
+    top: 156px;
+    left: 37%;
+    background-size: 82% auto;
+  }
+  .short_desc .step-arrow {
+    width: 27%;
+    top: 209px;
+    left: 22%;
+    background-size: 82% auto;
+  }
+  /* .impact .step-arrow {
+        width: 37%;
+        background-size: 60% auto;
+        top: 356px;
+        left: 21.5%;
+    } */
+  .long_desc .step-arrow {
+    width: 37%;
+    background-size: 60% auto;
+    top: 356px;
+    left: 21.5%;
+  }
+  .urgency .step-arrow {
+    width: 19%;
+    background-size: 60% auto;
+    top: 390px;
+    left: 32%;
+  }
+  .arrow_right .step-arrow {
+    width: 12%;
+    height: 117px;
+    top: 235px;
+    background-size: 57% auto;
+    left: 72%;
+  }
+  .send .step-arrow {
+    width: 15%;
+    top: 324px;
+    background-size: 57% auto;
+    left: 71.5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #ecoHelpComplete {
+    left: 92%;
+    top: 160px;
+    width: 11%;
+  }
+  .feedback-app {
+    top: 250px;
+  }
+  .content-wrapper-1 {
+    position: absolute;
+  }
+  .content-wrapper-2 {
+    position: absolute;
+    top: 160px;
+  }
+  #next-slide {
+    display: none;
+    position: absolute;
+    top: 500px;
+  }
+  .step-1 .step-image {
+    top: 290px;
+    right: -8px;
+  }
+  .step-2 .step-image {
+    top: 361px;
+    left: 34%;
+  }
+  .step-2 .step-image img {
+    width: 25px;
+  }
+  .step-3 .step-image {
+    top: 343px;
+    left: 48%;
+    width: 16%;
+  }
+  .defect .step-image {
+    width: 11%;
+    top: 359px;
+    left: 48%;
+  }
+  .step-3-4 .step-image {
+    top: 265px;
+    left: 48%;
+  }
+  .step-3-4 .step-image img {
+    width: 40px;
+  }
+  .step-4 .step-image {
+    top: 304px;
+    left: 48%;
+  }
+  .attach_info .step-image {
+    width: 21%;
+    top: 289px;
+    left: 48%;
+  }
+  .attach .step-image {
+    /* display: block; */
+    top: 265px;
+    left: 59%;
+  }
+  .attach-nograb .step-image {
+    top: 265px;
+    left: 63.5%;
+  }
+  .attach .step-image img {
+    width: 13%;
+  }
+  .attach-nograb .step-image img {
+    width: 13%;
+  }
+  .step-5 .step-image {
+    top: 266px;
+    left: 62%;
+  }
+  .step-5 .step-image img {
+    width: 12%;
+  }
+  .step-6 .step-image {
+    top: 266px;
+    left: 64.5%;
+  }
+  .step-6 .step-image img {
+    width: 13%;
+  }
+  .step-7 .step-image {
+    top: 266px;
+    left: 67%;
+  }
+  .step-7 .step-image img {
+    width: 22.5%;
+  }
+  .step-8 .step-image {
+    top: 318px;
+    left: 70.5%;
+  }
+  .step-1 .step-content {
+    top: 445px;
+    left: 69%;
+    width: 11%;
+  }
+  .step-2 .step-content {
+    top: 456px;
+    left: 41%;
+  }
+  .step-2 .step-content-defect {
+    top: 460px;
+    left: 46%;
+  }
+  .defect .step-content {
+    top: 385px;
+    left: 60%;
+  }
+  .step-3 .step-content {
+    top: 420px;
+    left: 16%;
+  }
+  .step-4 .step-content {
+    top: 175px;
+    left: 20%;
+  }
+  .attach_info .step-content {
+    top: -35px;
+    left: 28%;
+  }
+  .attach .step-content {
+    top: 173px;
+    left: 35%;
+  }
+  .attach-nograb .step-content {
+    top: 173px;
+    left: 36%;
+  }
+  .step-5 .step-content {
+    top: 167px;
+    left: 55%;
+  }
+  .step-6 .step-content {
+    top: 183px;
+    left: 72%;
+  }
+  .step-7 .step-content {
+    top: 246px;
+    left: 79%;
+  }
+  .step-8 .step-content {
+    top: 345px;
+    left: 78%;
+  }
+  /* .step-9 .step-content {
+    top: 240px;
+    left: 580px;
+} */
+  .step-1 .step-arrow {
+    top: 380px;
+    left: 76%;
+    background-size: 80% auto;
+    width: 29%;
+  }
+  .step-2 .step-arrow {
+    top: 371px;
+    left: 30%;
+    width: 39%;
+    background-size: 20% auto;
+  }
+  .step-2 .step-arrow-defect {
+    top: 361px;
+    left: 35.5%;
+    width: 37%;
+    background-size: 27% auto;
+  }
+  .defect .step-arrow {
+    width: 15%;
+    top: 371px;
+    left: 48.5%;
+    background-size: 67% auto;
+  }
+  .step-3 .step-arrow {
+    top: 335px;
+    left: 17.7%;
+    width: 74%;
+    background-size: 40% auto;
+  }
+  .step-4 .step-arrow {
+    top: 228px;
+    width: 53%;
+    left: 21%;
+    background-size: 51% auto;
+  }
+  .attach_info .step-arrow {
+    width: 13%;
+    top: 204px;
+    left: 37%;
+    background-size: 82% auto;
+  }
+  .attach .step-arrow {
+    top: 210px;
+    left: 44.5%;
+    width: 22%;
+    background-size: 65% auto;
+  }
+  .attach-nograb .step-arrow {
+    top: 210px;
+    left: 47.5%;
+    width: 24%;
+    background-size: 65% auto;
+  }
+  .step-5 .step-arrow {
+    top: 191px;
+    left: 57.5%;
+    width: 9%;
+    background-size: 65% auto;
+  }
+  .step-6 .step-arrow {
+    top: 191px;
+    left: 65.3%;
+    background-size: 45% auto;
+    width: 11%;
+  }
+  .step-7 .step-arrow {
+    top: 221px;
+    left: 69.5%;
+    background-size: 45% auto;
+    width: 22%;
+  }
+  .step-8 .step-arrow {
+    top: 298px;
+    left: 72%;
+    background-size: 35% auto;
+  }
+  /* .step-9 .step-arrow {
+    top: 250px;
+    left: 515px;
+    background-size: 60% auto;
+} */
+  .step .step-content h2 {
+    font-size: 18px;
+  }
+  .step .step-content-defect h2 {
+    font-size: 18px;
+  }
+  /* incident step-image */
+  .incident_bg {
+    margin-left: 86px;
+    width: 73%;
+    margin-top: 7px;
+  }
+  .help .step-image {
+    display: block;
+    padding-left: 9px;
+    border-left: 1px dotted #cccccc;
+    width: 6%;
+    top: 267px;
+    left: 66.5%;
+  }
+  .help .step-image img {
+    width: 34%;
+  }
+  .attachment_info .step-image {
+    width: 27.5%;
+    top: 292px;
+    left: 42%;
+  }
+  .short_desc .step-image {
+    top: 312px;
+    left: 42%;
+  }
+  .short_desc .step-image img {
+    width: 67%;
+  }
+  /* .impact .step-image {
+        top: 362px;
+        left: 42%;
+    }
+    .impact .step-image img {
+        width: 48%;
+    } */
+  .long_desc .step-image {
+    top: 341px;
+    left: 42%;
+  }
+  .long_desc .step-image img {
+    width: 67%;
+  }
+  .urgency .step-image {
+    top: 388px;
+    left: 42%;
+  }
+  .urgency .step-image img {
+    width: 48%;
+  }
+  .arrow_left .step-image {
+    width: 1.3%;
+    top: 335px;
+    left: 39.5%;
+  }
+  .arrow_right .step-image {
+    width: 1.3%;
+    top: 335px;
+    left: 71%;
+  }
+  .send .step-image {
+    width: 2.5%;
+    top: 376px;
+    left: 70%;
+  }
+  .help .step-content {
+    width: 22%;
+    top: 214px;
+    left: 76%;
+  }
+  .short_desc .step-content {
+    width: 16%;
+    top: 200px;
+    left: 16%;
+  }
+  /* .impact .step-content {
+        width: 17%;
+        top: 456px;
+        left: 15%;
+    } */
+  .long_desc .step-content {
+    width: 17%;
+    top: 456px;
+    left: 15%;
+  }
+  .urgency .step-content {
+    width: 22%;
+    top: 482px;
+    left: 36%;
+  }
+  .arrow_right .step-content {
+    width: 21%;
+    top: 265px;
+    left: 79%;
+  }
+  .send .step-content {
+    width: 21%;
+    top: 345px;
+    left: 81%;
+  }
+  .help .step-arrow {
+    top: 222px;
+    left: 68%;
+    background-size: 60% auto;
+    width: 8%;
+  }
+  .attachment_info .step-arrow {
+    width: 14%;
+    top: 201px;
+    left: 37%;
+    background-size: 82% auto;
+  }
+  .short_desc .step-arrow {
+    width: 26%;
+    top: 253px;
+    left: 20%;
+    background-size: 82% auto;
+  }
+  /* .impact .step-arrow {
+        width: 37%;
+        background-size: 60% auto;
+        top: 365px;
+        left: 19.5%;
+    } */
+  .long_desc .step-arrow {
+    width: 37%;
+    background-size: 60% auto;
+    top: 365px;
+    left: 19.5%;
+  }
+  .urgency .step-arrow {
+    width: 19%;
+    background-size: 60% auto;
+    top: 391px;
+    left: 30%;
+  }
+  .arrow_right .step-arrow {
+    width: 12%;
+    height: 117px;
+    top: 276px;
+    background-size: 57% auto;
+    left: 71.5%;
+  }
+  .send .step-arrow {
+    width: 15%;
+    top: 340px;
+    background-size: 57% auto;
+    left: 71.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+#ecoFloaters > button {
+  background: url(https://ecolib.appliediphub.com/img/feedback1.png) no-repeat
+    #ffffff center center;
+  background-size: contain;
+  border: 0 none;
+  text-indent: -99999px;
+  width: 44px;
+  height: 154px;
+  cursor: pointer;
+  position: fixed;
+  top: 35%;
+  padding: 0;
+  right: -5px;
+  margin: auto;
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  /* -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .4); */
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, .4); */
+  border-radius: 5px;
+  outline-color: rgb(255, 255, 255);
+  z-index: 2;
+  min-width: 0;
+  background-color: transparent !important;
+}
+
+.eco-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 1099;
+}
+
+.eco-cropper-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 1100;
+}
+
+.eco-cropper-holder .eco-cropper-inner {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#ecoFloatBox {
+  position: fixed;
+  z-index: 1100;
+  display: table;
+  width: 585px;
+  margin: 0 auto;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eco-rating-circle {
+  padding: 37px 38px;
+  border: 1px solid #b5b5bd;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  background-color: #4d4e60;
+}
+
+.eco-rating-box-outer {
+  padding: 26px 25px;
+  border-radius: 50%;
+  background-image: url(https://ecolib.appliediphub.com/img/border.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eco-rating-icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.eco-rating-icon.active {
+  background-position: 0 -46px;
+}
+
+.eco-rating-icon.disabled {
+  cursor: not-allowed;
+}
+
+.eco-rating-icon + .eco-tooltip {
+  position: absolute;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 0 5px;
+  line-height: 18px;
+  border: 1px solid #cccccc;
+  font-size: 12px;
+  display: none;
+}
+
+.uploaded-filename + .eco-tooltip {
+  position: absolute;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 0 5px;
+  line-height: 20px;
+  border: 1px solid #cccccc;
+  font-size: 12px;
+  display: none;
+}
+
+.uploaded-filename:hover + .eco-tooltip {
+  display: block;
+}
+
+.uploaded-filename + .eco-tooltip {
+  top: -15px;
+  left: 20px;
+  z-index: 99;
+}
+
+.eco-rating-icon:hover + .eco-tooltip {
+  display: block;
+}
+
+.eco-rating-icon.eco-frustrated {
+  background-image: url(https://ecolib.appliediphub.com/img/frustrated.png);
+  top: 25px;
+  left: -16px;
+}
+
+.eco-rating-icon.eco-frustrated + .eco-tooltip {
+  top: 38px;
+  left: 40px;
+  z-index: 99;
+}
+
+.eco-rating-icon.eco-angry {
+  background-image: url(https://ecolib.appliediphub.com/img/angry.png);
+  top: -26px;
+  right: 65px;
+}
+
+.eco-rating-icon.eco-angry + .eco-tooltip {
+  top: -10px;
+  left: 113px;
+}
+
+.eco-rating-icon.eco-confused {
+  background-image: url(https://ecolib.appliediphub.com/img/confused.png);
+  top: 25px;
+  right: -16px;
+}
+
+.eco-rating-icon.eco-confused + .eco-tooltip {
+  top: 38px;
+  right: -80px;
+}
+
+.eco-rating-icon.eco-bored {
+  background-image: url(https://ecolib.appliediphub.com/img/bored.png);
+  bottom: 20px;
+  right: -14px;
+}
+
+.eco-rating-icon.eco-bored + .eco-tooltip {
+  bottom: 33px;
+  right: -60px;
+}
+
+.eco-rating-icon.eco-happy {
+  background-image: url(https://ecolib.appliediphub.com/img/happy.png);
+  bottom: -26px;
+  right: 65px;
+}
+
+.eco-rating-icon.eco-happy + .eco-tooltip {
+  bottom: -14px;
+  left: 113px;
+}
+
+.eco-rating-icon.eco-cool {
+  background-image: url(https://ecolib.appliediphub.com/img/cool.png);
+  bottom: 20px;
+  left: -14px;
+}
+
+.eco-rating-icon.eco-cool + .eco-tooltip {
+  bottom: 33px;
+  left: 36px;
+  z-index: 99;
+}
+
+/* defect serverity icon */
+
+.eco-rating-icon.eco-critical {
+  background-image: url(https://ecolib.appliediphub.com/img/critical.png);
+  top: -23px;
+  right: 65px;
+}
+
+.eco-rating-icon.eco-critical + .eco-tooltip {
+  top: -10px;
+  left: 110px;
+}
+
+.eco-rating-icon.eco-high {
+  background-image: url(https://ecolib.appliediphub.com/img/high.png);
+  top: 40px;
+  right: -20px;
+}
+
+.eco-rating-icon.eco-high + .eco-tooltip {
+  top: 20px;
+  right: -36px;
+}
+
+.eco-rating-icon.eco-moderate {
+  background-image: url(https://ecolib.appliediphub.com/img/moderate.png);
+  bottom: 2px;
+  right: 2px;
+}
+
+.eco-rating-icon.eco-moderate + .eco-tooltip {
+  bottom: 33px;
+  right: -60px;
+}
+
+.eco-rating-icon.eco-low {
+  background-image: url(https://ecolib.appliediphub.com/img/low.png);
+  bottom: -1px;
+  left: 6px;
+}
+
+.eco-rating-icon.eco-low + .eco-tooltip {
+  bottom: 44px;
+  left: 40px;
+  z-index: 99;
+}
+
+.eco-rating-icon.eco-trivial {
+  background-image: url(https://ecolib.appliediphub.com/img/trivial.png);
+  top: 40px;
+  left: -20px;
+}
+
+.eco-rating-icon.eco-trivial + .eco-tooltip {
+  top: 25px;
+  left: 20px;
+  z-index: 99;
+}
+
+/* defect serverity icon end */
+
+.eco-logo-holder {
+  background: rgb(58, 58, 78);
+  border: 2px solid rgba(180, 191, 204, 0.5);
+  border-radius: 50%;
+  height: 127px;
+  position: relative;
+  text-align: center;
+  width: 126px;
+}
+
+.eco-logo-holder img {
+  display: inline-block;
+  position: absolute;
+  width: 85px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eco-logo-holder li.active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  margin: 0 auto;
+}
+
+.eco-carousel {
+  position: relative;
+}
+
+.eco-carousel ul {
+  padding: 0;
+  margin: 0;
+}
+
+.eco-carousel ul li {
+  list-style: none;
+  display: block;
+  vertical-align: middle;
+  /* padding-top: 50px; */
+}
+
+.eco-carousel ul li span {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  margin: 6px 12px 0;
+  /* letter-spacing: 0.5px; */
+}
+
+.eco-slider-container {
+  height: 214px;
+  background-color: #5a5969;
+  border: 1px solid #b5b5bd;
+  border-radius: 0 15px 15px 0;
+  display: inline-block;
+  padding: 10px 10px 25px 45px;
+  position: relative;
+  vertical-align: middle;
+  width: 385px;
+  z-index: 0;
+}
+
+.eco-slider {
+  height: 214px;
+  margin-left: -63px;
+  position: relative;
+}
+
+.eco-slider-nodefect {
+  height: 200px;
+  margin-left: -58px;
+  position: relative;
+}
+
+.eco-close-cropper {
+  background-image: url(https://ecolib.appliediphub.com/img/close.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 15px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 14px;
+}
+
+.eco-feedback {
+  padding: 0 33px 0 25px;
+}
+
+.eco-feedback textarea {
+  letter-spacing: 0.5px;
+  width: 265px;
+  height: 65px;
+  font-family: "HelveticaNeue-Light";
+  font-size: 13px;
+  border: none;
+  padding: 5px 10px;
+  resize: none;
+}
+
+.eco-icon-feedback {
+  margin-top: 5px;
+  float: left;
+}
+
+.eco-icon-feedback img {
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eco-icon-feedback span {
+  letter-spacing: 0.5px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.eco-templates {
+  width: 385px;
+  font-size: 14px;
+  position: absolute;
+}
+
+.eco-template-position {
+  top: -22px;
+  left: 164px;
+}
+
+.eco-template-incidentPos {
+  top: -24px;
+  left: 164px;
+}
+
+.eco-templates nav ul li {
+  list-style: none;
+  float: left;
+  padding-right: 3px;
+  /* position: absolute; */
+}
+
+.eco-templates nav ul li a {
+  text-decoration: none;
+  /* opacity: 0.6; */
+  background-color: #5a5969;
+  border: 1px solid transparent;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 12px 10px 12px;
+  color: #fff;
+}
+
+.eco-templates .active {
+  opacity: 1;
+  color: #1ed6ff;
+}
+
+.eco-tools,
+.eco-tools ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.eco-tools {
+  margin-top: 8px;
+  float: right;
+  margin-bottom: 37px;
+}
+
+.eco-tools li {
+  float: left;
+  text-align: center;
+  margin-right: 15px;
+  font-size: 0;
+}
+
+.eco-tools li:last-child {
+  margin-right: 0;
+}
+
+.eco-tools li.eco-mask {
+  padding-left: 15px;
+  border-left: 1px solid #cccccc;
+}
+
+.eco-tools li a {
+  display: block;
+  text-decoration: none;
+  opacity: 0.6;
+  color: #ffffff;
+}
+
+.eco-tools li a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.eco-tools li.active a {
+  opacity: 1;
+  color: #1ed6ff;
+}
+
+.eco-tools li a span {
+  display: block;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+}
+
+.eco-tools img {
+  width: 22px;
+}
+
+.eco-clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.eco-clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+
+* html .eco-clearfix {
+  height: 1%;
+}
+
+.eco-clearfix {
+  display: block;
+}
+
+.eco-tab-content {
+  position: absolute;
+  top: 88px;
+  display: none;
+}
+
+.eco-tab-content.active {
+  display: block;
+}
+
+.eco-tab-incident {
+  position: absolute;
+  top: 130px;
+  display: none;
+}
+
+.eco-tab-incident.active {
+  display: block;
+}
+
+/* checkbox styling start*/
+
+.eco-defectCheckbox {
+  margin-top: -8px;
+}
+
+.eco-anonymousCheckbox {
+  position: absolute;
+  top: 150px;
+}
+
+.eco-checkbox {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.eco-checkbox input[type="checkbox"] {
+  opacity: 0;
+  margin: 0;
+}
+
+.eco-checkbox label {
+  background-image: url(https://ecolib.appliediphub.com/img/cb_normal.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 17px 16px;
+  color: #fff;
+  margin: 10px 0 0 -16px;
+  padding: 0px 0px 0px 25px;
+  display: inline-block;
+  transition: all 100ms linear 0s;
+  position: static;
+  font-size: 13px;
+}
+
+.eco-checkbox input[type="checkbox"]:hover + label,
+.eco-checkbox input[type="checkbox"]:focus + label {
+  background-image: url(https://ecolib.appliediphub.com/img/cb_focus.png);
+}
+
+.eco-checkbox input[type="checkbox"]:checked + label {
+  background-image: url(https://ecolib.appliediphub.com/img/cb_checked.png);
+}
+
+.eco-checkbox input[type="checkbox"]:checked:disabled + label {
+  background-image: url(https://ecolib.appliediphub.com/img/cb_checked_disabled.png);
+}
+
+.eco-checkbox input[type="checkbox"]:disabled + label {
+  background-image: url(https://ecolib.appliediphub.com/img/cbZ_disabled.png);
+}
+
+input[type="checkbox"][disabled],
+input[type="checkbox"].disabled {
+  cursor: not-allowed;
+}
+
+input[type="radio"][disabled] + label,
+input[type="checkbox"][disabled] + label,
+.eco-checkbox.disabled label {
+  cursor: not-allowed;
+}
+
+/* checkbox styling end*/
+
+.eco-slider-container .eco-send {
+  color: #1ed6ff;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 18px;
+  text-decoration: none;
+}
+
+.eco-sendPosition {
+  position: absolute;
+  right: 10px;
+  bottom: 52px;
+}
+
+.eco-send-nodefect {
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+}
+
+.eco-slider-container .eco-send {
+  background-image: url(https://ecolib.appliediphub.com/img/send.png);
+}
+
+.eco-feedback-version {
+  bottom: 8px;
+  color: #fff;
+  font-family: "HelveticaNeue-Thin";
+  font-size: 10px;
+  margin: 0;
+  position: absolute;
+  right: 110px;
+}
+
+.eco-powered_by {
+  font-family: "HelveticaNeue-Thin";
+  font-size: 10px;
+  position: absolute;
+  right: 8px;
+  bottom: 3px;
+  margin: 0;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.eco-powered_by img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.eco-powered_by span {
+  font-size: 14px;
+}
+
+/* Toast Msg */
+
+.eco-notification {
+  position: fixed;
+  top: 1px;
+  right: 1px;
+  border-radius: 8px;
+  z-index: 1102;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Medium";
+}
+
+.eco-success {
+  background-color: #b9e8d2 !important;
+  color: #03702a;
+}
+
+.eco-error {
+  background-color: #e7b8b9 !important;
+  color: #992632;
+}
+
+.eco-notification a {
+  color: #5a5969;
+  text-decoration: none;
+}
+
+.eco-notification a:hover {
+  color: #5a5969;
+  text-decoration: none;
+}
+
+.eco-success-toaster {
+  background-image: url(https://ecolib.appliediphub.com/img/success.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 36px 36px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  display: inline-block;
+  transition: all 100ms linear 0s;
+  position: static;
+  margin-top: -20px;
+}
+
+.eco-error-toaster {
+  background-image: url(https://ecolib.appliediphub.com/img/error1.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 36px 36px;
+  padding: 0px 0px 0px 25px;
+  display: inline-block;
+  padding-bottom: 15px;
+  transition: all 100ms linear 0s;
+  position: static;
+  margin-top: -20px;
+}
+
+.toaster-header {
+  margin-left: 20px;
+  display: inline-block;
+  position: static;
+  padding-top: 25px;
+  font-family: HelveticaNeue-Medium !important;
+}
+
+.eco-toaster-body {
+  border-top: 1px solid;
+}
+
+.eco-toast-close {
+  /* background-image: url(https://ecolib.appliediphub.com/img/close.png); */
+  background-repeat: no-repeat;
+  display: block;
+  height: 15px;
+  position: absolute;
+  width: 14px;
+  padding-bottom: 36px !important;
+  top: 5px;
+  right: 5px;
+}
+
+.eco-alert {
+  font-family: "HelveticaNeue-Medium";
+  padding: 15px 15px 15px 35px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.eco-alert-dismissible {
+  padding-right: 30px;
+}
+
+button.eco-close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.5;
+}
+
+.eco-alert-dismissible .eco-close {
+  position: relative;
+  top: -4px;
+  right: -23px;
+  color: inherit;
+  background-color: transparent !important;
+  width: 15px !important;
+  padding: 0px !important;
+  border: none !important;
+  color: rgb(145, 46, 9) !important;
+  font-size: 20px !important;
+}
+
+.eco-alert-danger {
+  color: #912e09;
+  background: url(https://ecolib.appliediphub.com/img/error.png) no-repeat 10px
+    center #ffe0d9;
+}
+
+#ecoFloatBox .eco-alert {
+  padding: 9px 30px 3px 35px;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+.eco-alert-position {
+  width: 377px;
+  left: 198px;
+  top: -49px;
+}
+
+.eco-alert-nodefect {
+  width: 370px;
+  left: 206px;
+  top: -6px;
+}
+
+.eco-screen-grab-canvas {
+  position: fixed;
+}
+
+.eco-screen-grab-image {
+  position: fixed;
+  z-index: 998;
+}
+
+button.eco-toggle-pin {
+  border: none;
+  background-color: #ffffff !important;
+  padding: 0 !important;
+  cursor: pointer;
+  position: fixed !important;
+  min-width: 20px !important;
+}
+
+button.eco-toggle-pin:focus {
+  outline: none;
+}
+
+button.eco-toggle-pin > img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) and (orientation: landscape) {
+  #floaters > button {
+    width: 40px;
+    height: 40px;
+    background-size: 30px 30px;
+  }
+}
+
+.document-upload > input {
+  display: none;
+}
+
+.document-upload img {
+  opacity: 1.6;
+  height: 25px;
+  width: 19px;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+.document-upload span {
+  display: block;
+  font-size: 10px;
+  line-height: 10px;
+  margin-top: 5px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.uploaded-file-incident {
+  position: absolute;
+  top: 62px;
+  width: 288px;
+  margin-left: -24px;
+}
+
+.uploaded-file {
+  position: absolute;
+  top: 62px;
+  width: 267px;
+}
+
+#uploaded-file img {
+  margin-top: 2px;
+  width: 10px;
+}
+
+.uploaded-filename {
+  /*
+    opacity: 0.8; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 248px;
+  background-image: url(https://ecolib.appliediphub.com/img/attach.png);
+  background-repeat: no-repeat;
+  background-size: 13px 19px;
+  color: #fff;
+  padding: 5px 0px 0px 21px;
+  display: inline-block;
+  font-size: 11px;
+}
+
+.eco-fileupload-delete {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: -4px;
+}
+
+/* Incident template css */
+
+.eco-slider-incident {
+  height: 250px;
+  border-radius: 15px 15px 15px 15px;
+  margin-left: 191px;
+  position: relative;
+  top: 18px;
+}
+
+.eco-incident-body textarea {
+  letter-spacing: 0.5px;
+  width: 288px;
+  font-family: "HelveticaNeue-Light";
+  font-size: 13px;
+  border: none;
+  padding: 5px 10px;
+  resize: none;
+}
+
+.eco-radio label {
+  color: #fff;
+  font-size: 14px;
+  margin-right: -7px;
+  padding: 2px 9px 3px 2px;
+}
+
+.eco-radio input[type="radio"] {
+  margin-right: 5px;
+}
+
+.eco-radio input[type="radio"]:checked::after {
+  color: #fff;
+  background-color: #fff;
+}
+
+.eco-incident-impact {
+  font-size: 14px;
+  position: absolute;
+  top: 148px;
+}
+
+.incident-select {
+  font-size: 13px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+  color: #fff;
+  width: 208px;
+  border: 0px;
+  outline: none;
+  border-bottom: 1px solid #cccccc !important;
+}
+
+.eco-radio option {
+  background-color: #5a5969;
+}
+
+.eco-impact-position {
+  margin-left: 7px;
+}
+
+.eco-incident-urgency {
+  font-size: 14px;
+  position: absolute;
+  top: 190px;
+}
+
+.eco-incident-urgency select {
+  font-size: 13px;
+  width: 208px;
+  border: none;
+}
+
+.eco-incident-anonymous {
+  position: absolute;
+  top: 175px;
+  left: 43px;
+}
+
+.eco-incident-sendPosition {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+}
+
+.eco-incident-navleft {
+  position: absolute;
+  left: 3px;
+  top: 113px;
+}
+
+.eco-incident-navright {
+  position: absolute;
+  right: 5px;
+  top: 113px;
+}
+
+.eco-arrows img {
+  width: 17px;
+  opacity: 1;
+}
+
+.eco-incident-option {
+  position: absolute;
+  top: 130px;
+  color: #fff;
+}
+
+#slide-container .slide {
+  display: none;
+}
+
+#slide-container .slide.active {
+  display: block;
+}
+
+.incident-page .slide span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.eco-arrows .prev,
+.eco-arrows .next {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.eco-arrows .prev.disabled,
+.eco-arrows .next.disabled {
+  opacity: 0.5 !important;
+}

@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    // See https://github.com/jsx-eslint/eslint-plugin-react#configuration
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    // There's no need to import React on every file where it is used.
+    "react/react-in-jsx-scope": "off",
+    // Ensure destructuring and symmetric naming of useState hook value and setter variables.
+    "react/hook-use-state": "error",
+    // Enforce event handler naming conventions in JSX
+    "react/jsx-handler-names": "error",
+    // Enforces consistent naming for boolean props
+    "react/boolean-prop-naming": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

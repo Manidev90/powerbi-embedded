@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Cloud & Hybrid Infrastructure"
+      content="Nucleus business insights and analytics platform"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link rel="stylesheet" href="https://ecolib.appliediphub.com/css/eco-survey.css">
+    <link rel="stylesheet" href="https://ecolib.appliediphub.com/css/jquery-ui.css">
+    <link rel="stylesheet" href="https://ecolib.appliediphub.com/css/jquery-ui-slider-pips.css">
+    <link rel="stylesheet" href="https://ecolib.appliediphub.com/css/slider.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Cloud & Hybrid Infrastructure</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ecolib.appliediphub.com/js/jquery-ui.min.js"></script>
+	  <script src="https://ecolib.appliediphub.com/js/jquery-ui-slider-pips.min.js"></script>
+	  <script src="https://ecolib.appliediphub.com/js/ecosurvey-dynamic.js"></script>
+    <script src="https://ecolib.appliediphub.com/js/eco-feedback-v1.3.min.js"></script>
+    <script>
+      /**
+       * Initiliaze Eco Feedback
+       */
+      const options = {
+        enterpriseCode: "nttdata",
+        applicationName: "Cloud&Hybrid",
+        surveyApplicationName: "Cloud&Hybrid",
+        emailId: "ncc.application@nttdata.com",
+        password:
+          "d4cc2e3bab6ba157a09621b34030c6ace6437a26885659fd3bc3ddc8fa988c91",
+        brandLogoUrl: "%PUBLIC_URL%/android-chrome-192x192.png",
+        ecoapiEndpoint: "%REACT_APP_ECO_API_ENDPOINT%",
+        enableDefect: false,
+      };
+
+      // Hacky stuff going on, so that we can set username and password on react
+      window.initializeEcoOptions = (username, email) => {
+        options.userId = username;
+        options.notificationMailId = email;
+
+        const currentUrl = window.location.href;
+        $(() => {
+          const feedback = initializeFeedback(options);
+          initializeSurvey(options);
+					setEcoAttributes();
+          feedback.setUdf({
+            Page: currentUrl.substring(
+              currentUrl.lastIndexOf("/") + 1,
+              currentUrl.length
+            ),
+          });
+        });
+      };
+    </script>
+  </body>
+</html>

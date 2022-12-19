@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// Define variables that will be later on the overrides here
+$human-blue: #5876aa;
+$smart-blue: #0079a1;
+$dark-gray: #404041;
+$sky-blue: #0056b3;
+// $smart-navy: #000b28;
+// $dynamic-red: #d0372a;
+$delighful-yellow: #eba73e;
+$body-bg-color: #f9fafb;
+
+// Include any custom colors this will be used by bootstrap color utilities, so you can do
+// <button class="btn btn-accent">, and use variables such as var(--bs-accent)
+$custom-colors: (
+  accent: $human-blue,
+  secondary-blue: $sky-blue,
+);
+
+// We are importing bootstrap by parts, that way we can override any styles
+// before it compiles. This file must be structured the same way as the official
+// one located at node_modules/bootstrap/scss/bootstrap.scss
+@import "~bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$blue: $smart-blue;
+$yellow: $delighful-yellow;
+$secondary: $dark-gray;
+$body-bg: $body-bg-color;
+
+$font-family-base: "Roboto", sans-serif;
+
+$input-btn-font-size: 0.875rem;
+
+// Side menu links
+$navbar-light-color: $secondary;
+$navbar-light-hover-color: $blue;
+$navbar-light-active-color: $blue;
+// Dropdowns
+$enable-caret: false;
+$dropdown-box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+$dropdown-border-color: var(--bs-gray-300);
+// Accordions
+$accordion-icon-width: 14px;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 5. Include remainder of required parts
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/placeholders";
+@import "~bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "~bootstrap/scss/utilities/api";
+
+// 8.Some Bootstrap utilities generate classes that cannot be overriden at compile time.
+// Such overrides, as well as Global styles should go here.
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+
+  --bs-content-padding-x: 1.88rem;
+  --bs-content-padding-y: 0.88rem;
+  // Prefix all custom variables with --bs, to avoid confusion between bootstrap variables.
+  --bs-btn-secondary-hover: #ebebec;
+
+  --qlik-card-border-color: #dfdfdf;
+  --qlik-card-border-radius: 5px;
+  --qlik-card-box-shadow: 2px 2px 10px #949494;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-accent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-accent);
+}
+
+::-moz-scrollbar {
+  width: 5px;
+}
+
+::-moz-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff;
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background: var(--bs-accent);
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: var(--bs-accent);
+}
+
+.scrollbar-track.fade {
+  opacity: 1 !important;
+}
+
+iframe {
+  position: absolute;
+  inset: 0;
+  border: none;
+}
+
+.dropdown-menu {
+  box-shadow: $dropdown-box-shadow;
+}
+
+.btn.btn-secondary {
+  color: $secondary;
+  background: $white;
+  &:hover {
+    color: $secondary;
+    background: var(--bs-btn-secondary-hover);
+  }
+}
+
+// Override Eco feedback button size and position
+// #ecoFloaters > button {
+//removed everything as per new design 18/10/2022
+// left: -16px;
+// right: unset !important;
+// transform: rotate(180deg) scale(90%);
+// }
